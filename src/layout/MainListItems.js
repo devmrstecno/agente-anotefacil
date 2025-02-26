@@ -299,7 +299,7 @@ const MainListItems = (props) => {
   };
 
   return (
-    <div onClick={drawerClose} style={{ overFlow: "hidden" }}>
+    <div onClick={drawerClose} style={{ overflow: "hidden" }}>
       <Can
         role={user.profile}
         perform="dashboard:view"
@@ -357,12 +357,6 @@ const MainListItems = (props) => {
         primary={i18n.t("mainDrawer.listItems.schedules")}
         icon={<EventIcon />}
       />
-      {/* 
-      <ListItemLink
-        to="/kanban"
-        primary={i18n.t("CRM")}
-        icon={<TableChartIcon />}
-      /> */}
 
       <ListItem
         button
